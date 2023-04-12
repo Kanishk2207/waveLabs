@@ -31,18 +31,18 @@ int maxProfit(vector<int>& price) {
 }
 
 int main() {
-    //size of array with prices
+    
     int price_vals, maximum_profit;
     vector<int> price;
-
+    
+    //enter price of silicon
     cout<<"Enter the price of silicon (enter -1 to stop): "<<endl;
     while(cin >> price_vals && price_vals != -1){
         price.push_back(price_vals);
 
     }
     
-    //int maximum_profit;
-    //vector<int> price = {5,4,1,2,8};
+    
     maximum_profit = maxProfit(price);
     cout << maximum_profit << endl; 
     
